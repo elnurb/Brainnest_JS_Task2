@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calc.css">
+</head>
+<body>
+    <div class="calcs_header">
+        <div class="calcs_display">
+            <input type="text" id="input_text" placeholder="0" disabled/>
+        </div>
+        <div class="btn">
+            <button value="&larr;" onclick="backspace()">&larr;</button>
+            <button value="+/-" onclick="sign()">+/-</button>
+            <button value="%" onclick="percent()">%</button>
+            <button value="/" onclick="operate('/')">/</button>
+        </div>
+        <div class="btn">
+            <button value="7" onclick="operate('7')">7</button>
+            <button value="8" onclick="operate('8')">8</button>
+            <button value="9" onclick="operate('9')">9</button>
+            <button value="*" onclick="operate('*')">x</button>
+         </div>
+         <div class="btn">
+            <button value="4" onclick="operate('4')">4</button>
+            <button value="5" onclick="operate('5')">5</button>
+            <button value="6" onclick="operate('6')">6</button>
+            <button value="-" onclick="operate('-')">-</button>
+         </div>
+        <div class="btn">
+                <button value="1" onclick="operate('1')">1</button>
+                <button value="2" onclick="operate('2')">2</button>
+                <button value="3" onclick="operate('3')">3</button>
+                <button value="+" onclick="operate('+')" value="+">+</button>
+        </div>
+        <div class="btn">
+                <button value="c" onclick="clears()">C</button>
+                <button value="0" onclick="operate('0')" >0</button>
+                <button value="." onclick="operate('.')">.</button>
+                <button value="=" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="./calc.js"></script>
+
+    
+</body>
+</html>
